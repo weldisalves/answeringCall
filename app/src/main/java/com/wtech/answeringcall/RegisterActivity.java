@@ -27,9 +27,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     private Intent intent;
 
-    private Presenca presenca = new Presenca();
-    private Bundle bundle;
-
+    private String dataAux;
+    private String horaAux;
+    private int idAux;
+    private String status;
 
     @TargetApi(Build.VERSION_CODES.N)
     @Override
@@ -37,13 +38,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        txtData = (TextView) findViewById(R.id.txtViewData);
-        txtHora = (TextView) findViewById(R.id.txtViewHora);
-
         dataHoraAtual();
-
-        txtData.setText(presenca.getData());
-        txtHora.setText(presenca.getHora());
 
         /**
          * iteração dosbotões da tela
@@ -57,9 +52,15 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (verificar()) {
-                    presenca.setStatus("saida");
+                    status = "saida";
 
                     intent = new Intent(RegisterActivity.this, CheckInActivity.class);
+
+                    intent.putExtra("id",idAux);
+                    intent.putExtra("data",dataAux);
+                    intent.putExtra("hora",horaAux);
+                    intent.putExtra("status",status);
+
                     startActivity(intent);
 
                     finish();
@@ -71,9 +72,15 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (verificar()) {
-                    presenca.setStatus("entrada");
+                    status = "entrada";
 
                     intent = new Intent(RegisterActivity.this, CheckInActivity.class);
+
+                    intent.putExtra("id",idAux);
+                    intent.putExtra("data",dataAux);
+                    intent.putExtra("hora",horaAux);
+                    intent.putExtra("status",status);
+
                     startActivity(intent);
 
                     finish();
@@ -91,7 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(getApplication(), "ID inválido!!", Toast.LENGTH_LONG).show();
             return false;
         }
-        presenca.setIdParticipante(Integer.parseInt(id));
+        idAux = Integer.parseInt(id);
         return true;
     }
 
@@ -110,10 +117,12 @@ public class RegisterActivity extends AppCompatActivity {
         String ms = String.valueOf(m);
         String ss = String.valueOf(s);
 
-        String dataAux = dataFormat.format(c.getTime());
-        String horaAux = "" + hs + ":"+ms+":"+ss;
+        dataAux = dataFormat.format(c.getTime());
+        horaAux = "" + hs + ":"+ms+":"+ss;
 
-        presenca.setData(dataAux);
-        presenca.setHora(horaAux);
+        txtData = (TextView) findViewById(R.id.txtViewData);
+        txtHora = (TextView) findViewById(R.id.txtViewHora);
+        txtData.setText(dataAux);
+        txtHora.setText(horaAux);
     }
 }
