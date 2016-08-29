@@ -15,7 +15,7 @@
     <string name="login_pass_size_invalid">Sua senha deve ter entre 6 e 15 caracteres!</string>
     <string name="bem_vindo_adm">Seja Bem vindo ADMIN !</string>
     <string name="login_not_ok">Login não autorizado!</string>
-    <string name="id_found">ID inválido!</string>
+    <string name="id_not_ok">ID inválido!</string>
     <string name="id_required">Campo ID obrigatório!</string>
 
 </resources>
