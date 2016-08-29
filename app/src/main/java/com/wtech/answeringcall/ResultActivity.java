@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
     private Button btProximo;
+
+
+
     private Intent intent;
 
     @Override
