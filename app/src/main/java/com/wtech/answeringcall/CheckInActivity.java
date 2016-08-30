@@ -17,9 +17,6 @@ public class CheckInActivity extends AppCompatActivity {
     private TextView txtHora;
     private TextView txtStatus;
 
-    //Presenca presenca = getIntent().getExtras().getParcelable("presenca");
-    private Presenca presenca = new Presenca();
-
     private Intent intent;
 
     @Override
@@ -27,7 +24,22 @@ public class CheckInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkin);
 
-        checkIn();
+        txtId = (TextView)findViewById(R.id.txtViewId);
+        txtNome = (TextView)findViewById(R.id.txtViewNome);
+        txtData = (TextView)findViewById(R.id.txtViewData);
+        txtHora = (TextView)findViewById(R.id.txtViewHora);
+        txtStatus = (TextView)findViewById(R.id.txtViewStatus);
+
+        Bundle extras = getIntent().getExtras();
+        Presenca presenca = extras.getParcelable("presenca");
+
+        presenca.setNome(buscarNome(123));
+
+        txtId.setText(String.valueOf(presenca.getIdParticipante()));
+        txtNome.setText(presenca.getNome());
+        txtData.setText(presenca.getData());
+        txtHora.setText(presenca.getHora());
+        txtStatus.setText(presenca.getStatus());
 
         btConfirmar = (Button) findViewById(R.id.btnConfirmar);
         btConfirmar.setOnClickListener(new View.OnClickListener(){
@@ -52,22 +64,5 @@ public class CheckInActivity extends AppCompatActivity {
     public String buscarNome(int id){
         String nome = "Weldis Alves da Silva";
         return nome;
-    }
-
-    public void checkIn(){
-        txtId = (TextView) findViewById(R.id.txtViewId);
-        txtNome = (TextView) findViewById(R.id.txtViewNome);
-        txtData = (TextView) findViewById(R.id.txtViewData);
-        txtHora = (TextView) findViewById(R.id.txtViewHora);
-        txtStatus = (TextView) findViewById(R.id.txtViewStatus);
-
-        String nome = buscarNome(123);
-        presenca.setNome(nome);
-
-//        txtId.setText(presenca.getIdParticipante());
-        txtNome.setText(presenca.getNome());
-//        txtData.setText(presenca.getData());
-//        txtHora.setText(presenca.getHora());
-//        txtStatus.setText(presenca.getStatus());
     }
 }

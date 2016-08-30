@@ -15,7 +15,8 @@
             android:text="Liberar"
             android:id="@+id/btnLiberar"
             android:layout_gravity="center_horizontal"
-            android:textSize="50dp" />
+            android:textSize="50dp"
+            android:layout_marginTop="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +25,8 @@
             android:id="@+id/txtViewData"
             android:layout_gravity="center_horizontal"
             android:textSize="20dp"
-            android:text="Medium Text" />
+            android:text="Medium Text"
+            android:layout_marginTop="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,14 +35,16 @@
             android:id="@+id/txtViewHora"
             android:layout_gravity="center_horizontal"
             android:textSize="20dp"
-            android:text="Medium text" />
+            android:text="Medium text"
+            android:layout_marginTop="30dp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Atualizar"
             android:id="@+id/btnAtualizar"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp" />
 
     </LinearLayout>
 </LinearLayout>

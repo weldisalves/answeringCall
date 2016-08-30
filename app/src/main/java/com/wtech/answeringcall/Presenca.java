@@ -1,12 +1,12 @@
 package com.wtech.answeringcall;
 
-
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 /**
  * Created by weldis on 29/08/16.
  */
-public class Presenca {
+public class Presenca implements Parcelable {
     private int idParticipante;
     private String nome;
     private String  data;
@@ -62,4 +62,39 @@ public class Presenca {
         this.status = status;
     }
 
+
+    protected Presenca(Parcel in) {
+        idParticipante = in.readInt();
+        nome = in.readString();
+        data = in.readString();
+        hora = in.readString();
+        status = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(idParticipante);
+        dest.writeString(nome);
+        dest.writeString(data);
+        dest.writeString(hora);
+        dest.writeString(status);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<Presenca> CREATOR = new Parcelable.Creator<Presenca>() {
+        @Override
+        public Presenca createFromParcel(Parcel in) {
+            return new Presenca(in);
+        }
+
+        @Override
+        public Presenca[] newArray(int size) {
+            return new Presenca[size];
+        }
+    };
 }

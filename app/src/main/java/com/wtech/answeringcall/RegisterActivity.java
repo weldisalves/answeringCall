@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.Serializable;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -29,8 +28,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private String dataAux;
     private String horaAux;
-    private int idAux;
-    private String status;
+
+    private Presenca presenca = new Presenca();
 
     @TargetApi(Build.VERSION_CODES.N)
     @Override
@@ -52,17 +51,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (verificar()) {
-                    status = "saida";
+                    presenca.setStatus("saida");
 
                     intent = new Intent(RegisterActivity.this, CheckInActivity.class);
-
-                    intent.putExtra("id",idAux);
-                    intent.putExtra("data",dataAux);
-                    intent.putExtra("hora",horaAux);
-                    intent.putExtra("status",status);
+                    intent.putExtra("presenca",presenca);
 
                     startActivity(intent);
-
                     finish();
                 }
             }
@@ -72,17 +66,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (verificar()) {
-                    status = "entrada";
+                    presenca.setStatus("entrada");
 
                     intent = new Intent(RegisterActivity.this, CheckInActivity.class);
-
-                    intent.putExtra("id",idAux);
-                    intent.putExtra("data",dataAux);
-                    intent.putExtra("hora",horaAux);
-                    intent.putExtra("status",status);
+                    intent.putExtra("presenca",presenca);
 
                     startActivity(intent);
-
                     finish();
                 }
             }
@@ -98,7 +87,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(getApplication(), "ID inválido!!", Toast.LENGTH_LONG).show();
             return false;
         }
-        idAux = Integer.parseInt(id);
+        presenca.setIdParticipante(Integer.parseInt(id));
         return true;
     }
 
@@ -120,9 +109,13 @@ public class RegisterActivity extends AppCompatActivity {
         dataAux = dataFormat.format(c.getTime());
         horaAux = "" + hs + ":"+ms+":"+ss;
 
+        presenca.setData(dataAux);
+        presenca.setHora(horaAux);
+
         txtData = (TextView) findViewById(R.id.txtViewData);
         txtHora = (TextView) findViewById(R.id.txtViewHora);
-        txtData.setText(dataAux);
-        txtHora.setText(horaAux);
+
+        txtData.setText(presenca.getData());
+        txtHora.setText(presenca.getHora());
     }
 }

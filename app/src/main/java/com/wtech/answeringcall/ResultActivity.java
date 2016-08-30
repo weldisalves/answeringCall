@@ -5,12 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
     private Button btProximo;
-
-
 
     private Intent intent;
 
