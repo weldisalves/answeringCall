@@ -62,7 +62,6 @@ public class Presenca implements Parcelable {
         this.status = status;
     }
 
-
     protected Presenca(Parcel in) {
         idParticipante = in.readInt();
         nome = in.readString();

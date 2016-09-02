@@ -15,7 +15,6 @@ public class ResultAdminActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result_admin);
 
         btSair = (Button) findViewById(R.id.btnSair);
-
         btSair.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

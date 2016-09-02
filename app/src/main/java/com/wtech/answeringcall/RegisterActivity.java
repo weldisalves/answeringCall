@@ -18,6 +18,7 @@ import java.util.Date;
 public class RegisterActivity extends AppCompatActivity {
     private Button btSaiu;
     private Button btEntrou;
+    private Button btSair;
 
     private TextView txtHora;
     private TextView txtData;
@@ -76,15 +77,24 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btSair = (Button) findViewById(R.id.btnSair);
+        btSair.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplication(), "Saindo do sistema", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
     }
 
     public boolean verificar() {
         String id = edId.getText().toString();
         if (id.length() == 0) {
-            Toast.makeText(getApplication(), "Campo ID participante obrigatório", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplication(), "Campo ID participante obrigatório", Toast.LENGTH_SHORT).show();
             return false;
-        } else if (!id.equals("123")) {
-            Toast.makeText(getApplication(), "ID inválido!!", Toast.LENGTH_LONG).show();
+        } else if (Integer.parseInt(id) != 123) {
+            Toast.makeText(getApplication(), "ID inválido!!", Toast.LENGTH_SHORT).show();
             return false;
         }
         presenca.setIdParticipante(Integer.parseInt(id));

@@ -29,19 +29,19 @@ public class MainActivity extends AppCompatActivity {
                 String login = edLogin.getText().toString();
                 String senha = edSenha.getText().toString();
                 if(login.length() == 0 || senha.length() == 0){
-                    Toast.makeText(getApplication(), "Os campos login e senha são obrigatórios!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "Os campos login e senha são obrigatórios!",Toast.LENGTH_SHORT).show();
                 }else if(login.equals("admin") && senha.equals("123")){
                     intent = new Intent(MainActivity.this,AdminActivity.class);
                     startActivity(intent);
                     finish();
-                    Toast.makeText(getApplication(), "Seja bem vindo " + login.toUpperCase() + "!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "Seja bem vindo " + login.toUpperCase() + "!",Toast.LENGTH_SHORT).show();
                 }else if(login.equals("weldis") && senha.equals("123")) {
                     intent = new Intent(MainActivity.this,RegisterActivity.class);
                     startActivity(intent);
                     finish();
-                    Toast.makeText(getApplication(), "Seja bem vindo " + login.toUpperCase() + "!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "Seja bem vindo " + login.toUpperCase() + "!", Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplication(), "Login não autorizado!!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "Login não autorizado!!",Toast.LENGTH_SHORT).show();
                 }
             }
         });

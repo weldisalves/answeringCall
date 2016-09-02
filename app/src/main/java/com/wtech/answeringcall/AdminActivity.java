@@ -15,6 +15,7 @@ import java.util.Date;
 public class AdminActivity extends AppCompatActivity {
     private Button btLiberar;
     private Button btAtualizar;
+    private Button btSair;
 
     private TextView txtData;
     private TextView txtHora;
@@ -48,9 +49,18 @@ public class AdminActivity extends AppCompatActivity {
         btAtualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplication(), "Data e Hora atualizadas!",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "Data e Hora atualizadas!",Toast.LENGTH_SHORT).show();
                 intent = new Intent(AdminActivity.this,AdminActivity.class);
                 startActivity(intent);
+                finish();
+            }
+        });
+
+        btSair = (Button) findViewById(R.id.btnSair);
+        btSair.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplication(), "Saindo do sistema", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });

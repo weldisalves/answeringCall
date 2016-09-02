@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
     private Button btProximo;
+    private Button btSair;
 
     private Intent intent;
 
@@ -22,6 +24,15 @@ public class ResultActivity extends AppCompatActivity {
             public void onClick(View view) {
                 intent = new Intent(ResultActivity.this,RegisterActivity.class);
                 startActivity(intent);
+                finish();
+            }
+        });
+
+        btSair = (Button) findViewById(R.id.btnSair);
+        btSair.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplication(), "Saindo do sistema", Toast.LENGTH_LONG).show();
                 finish();
             }
         });

@@ -1,2 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/weldis/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/support-annotations-24.2.0_7554c8e18dd49a25997ec1adeb289d1349787d73.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/internal_impl-24.2.0_dc67f90700ea4a94de84cadadfbb8cea7044f99d.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-24.2.0_35f1ecdd0462e730d6305f7c64597d60b5354aae.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-24.2.0_c3305ebbf79aec47ccb71d479c616a44430dfb5c.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-24.2.0_e84b46c85c602e03e655abb6abae09da183361ba.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-24.2.0_c7f86a8a6f41161db59c265cbe2a5d4e86fb768e.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-24.2.0_5f9e6a812f60f71f7173f619e6602e0c0c006184.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-compat-24.2.0_6aa59b605b3f51a3930d1cecb395a424359f11ba.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/internal_impl-24.2.0_f7a43546bc8473e820bd70a3fc3a091e59f382c2.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/internal_impl-24.2.0_45e6ddeba41d801cf436288d283cc779d4cf926f.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-24.2.0_4ec649f277c2244d47bd0ed9178e5e30dbe5a7a3.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-24.2.0_3866094d1edcfabbd9857a70006bc937a50a789e.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-8.1.0_ac7d64fdc4271ea31800f3ee46f37be535409d09.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/internal_impl-24.2.0_b6d2128edd29c38a3a9f3a6c3c9607fede74c0f6.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/internal_impl-24.2.0_1f37e2c8a8fc36f45180047c3db58a30d0fc7ae0.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.android.support-support-fragment-24.2.0_2361b8eed2aed0cbe3803c11b47a095741bebb10.jar" />
+    </item>
+    <item
+        jar="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/home/weldis/AndroidStudioProjects/answeringCall/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-appindexing-8.1.0_3f838da0ccb6aeec2b707e3decb0586c661e15cf.jar" />
+    </item>
+
+</items>
